@@ -8,7 +8,7 @@ SELECT
     DATEDIFF(MAX(l.due_date), l.loan_date) AS days_to_end_term
 FROM
     library.books b
-JOIN
+INNER JOIN
     library.book2author ba ON b.id = ba.book_id
 JOIN
     library.authors a ON ba.author_id = a.id
