@@ -12,7 +12,7 @@ INNER JOIN
     library.book2author ba ON b.id = ba.book_id
 INNER JOIN
     library.authors a ON ba.author_id = a.id
-JOIN
+INNER JOIN
     library.publisher p ON b.id = p.id
 JOIN
     library.loan l ON b.id = l.book_id
