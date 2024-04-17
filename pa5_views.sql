@@ -14,7 +14,7 @@ INNER JOIN
     library.authors a ON ba.author_id = a.id
 INNER JOIN
     library.publisher p ON b.id = p.id
-JOIN
+INNER JOIN
     library.loan l ON b.id = l.book_id
 WHERE
     l.return_date IS NULL
